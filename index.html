@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="专业游戏攻略站 — 最新游戏通关攻略、角色培养、隐藏任务、装备推荐，每天更新，助你成为游戏高手。" />
+  <meta name="keywords" content="游戏攻略,手游攻略,通关教程,游戏技巧,RPG攻略,角色扮演游戏" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="GameGuide — 专业游戏攻略站" />
+  <meta property="og:description" content="最全面的游戏攻略资源，覆盖手游、主机、PC游戏。" />
+  <meta property="og:type" content="website" />
+  <title>GameGuide — 专业游戏攻略站</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google AdSense 占位 (替换为你的 Publisher ID) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- 结构化数据 Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GameGuide",
+    "url": "https://yourdomain.com",
+    "description": "专业游戏攻略站，提供最新游戏通关攻略和技巧",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🎮</span>
+      <span class="logo-text">GameGuide</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">首页</a></li>
+        <li class="has-dropdown">
+          <a href="guides/index.html">攻略分类</a>
+          <ul class="dropdown">
+            <li><a href="guides/mobile.html">手游攻略</a></li>
+            <li><a href="guides/pc.html">PC游戏</a></li>
+            <li><a href="guides/console.html">主机游戏</a></li>
+            <li><a href="guides/rpg.html">角色扮演</a></li>
+          </ul>
+        </li>
+        <li><a href="tools.html">游戏工具</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="search" placeholder="搜索攻略..." id="searchInput" aria-label="搜索攻略" />
+        <button type="button" aria-label="搜索">&#x1F50D;</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">&#x2630;</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>专业游戏攻略<br /><span class="accent">一站搞定</span></h1>
+      <p>涵盖手游、PC、主机平台的通关攻略、角色培养、隐藏任务、装备推荐。每天更新，持续精进。</p>
+      <div class="hero-cta">
+        <a href="guides/index.html" class="btn btn-primary">浏览所有攻略</a>
+        <a href="#latest" class="btn btn-outline">最新更新</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><span class="stat-num">500+</span><span class="stat-label">游戏攻略</span></div>
+      <div class="stat-card"><span class="stat-num">50+</span><span class="stat-label">覆盖游戏</span></div>
+      <div class="stat-card"><span class="stat-num">每日</span><span class="stat-label">内容更新</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AD BANNER (顶部横幅广告) ===================== -->
+<div class="container">
+  <div class="ad-unit ad-banner" aria-label="广告">
+    <!-- AdSense 横幅广告 728x90 -->
+    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+    <div class="ad-placeholder">广告位 — 728×90 横幅</div>
+  </div>
+</div>
+
+<!-- ===================== CATEGORIES ===================== -->
+<section class="categories section">
+  <div class="container">
+    <h2 class="section-title">按分类浏览</h2>
+    <div class="category-grid">
+      <a href="guides/mobile.html" class="category-card" style="--cat-color:#6c63ff">
+        <span class="cat-icon">&#x1F4F1;</span>
+        <span class="cat-name">手游攻略</span>
+        <span class="cat-count">120+ 篇</span>
+      </a>
+      <a href="guides/pc.html" class="category-card" style="--cat-color:#00b4d8">
+        <span class="cat-icon">&#x1F4BB;</span>
+        <span class="cat-name">PC游戏</span>
+        <span class="cat-count">180+ 篇</span>
+      </a>
+      <a href="guides/console.html" class="category-card" style="--cat-color:#e63946">
+        <span class="cat-icon">&#x1F579;&#xFE0F;</span>
+        <span class="cat-name">主机游戏</span>
+        <span class="cat-count">90+ 篇</span>
+      </a>
+      <a href="guides/rpg.html" class="category-card" style="--cat-color:#f4a261">
+        <span class="cat-icon">&#x2694;&#xFE0F;</span>
+        <span class="cat-name">角色扮演</span>
+        <span class="cat-count">80+ 篇</span>
+      </a>
+      <a href="guides/strategy.html" class="category-card" style="--cat-color:#2a9d8f">
+        <span class="cat-icon">&#x265F;&#xFE0F;</span>
+        <span class="cat-name">策略游戏</span>
+        <span class="cat-count">60+ 篇</span>
+      </a>
+      <a href="guides/fps.html" class="category-card" style="--cat-color:#e9c46a">
+        <span class="cat-icon">&#x1F3AF;</span>
+        <span class="cat-name">射击游戏</span>
+        <span class="cat-count">70+ 篇</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LATEST GUIDES + SIDEBAR ===================== -->
+<div class="container content-layout" id="latest">
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <h2 class="section-title">最新攻略</h2>
+    <div class="article-list" id="articleList">
+
+      <article class="article-card">
+        <a href="guides/elden-ring-guide.html" class="article-thumb-link">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+            <span class="thumb-icon">&#x2694;&#xFE0F;</span>
+          </div>
+        </a>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="tag tag-pc">PC游戏</span>
+            <time datetime="2026-06-04">2026-06-04</time>
+          </div>
+          <h3><a href="guides/elden-ring-guide.html">艾尔登法环 完整通关攻略 — 全Boss打法 + 隐藏结局解锁</a></h3>
+          <p>详细讲解主线路线、各大Boss弱点和最优战灰搭配，新手也能轻松通关的完整指南。</p>
+          <div class="article-footer">
+            <span class="read-time">&#x23F1; 约 15 分钟</span>
+            <a href="guides/elden-ring-guide.html" class="read-more">阅读全文 →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <a href="guides/honkai-starrail-guide.html" class="article-thumb-link">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#0f3460,#533483)">
+            <span class="thumb-icon">&#x2B50;</span>
+          </div>
+        </a>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="tag tag-mobile">手游攻略</span>
+            <time datetime="2026-06-03">2026-06-03</time>
+          </div>
+          <h3><a href="guides/honkai-starrail-guide.html">崩坏：星穹铁道 2.x 最强角色梯队排名 + 抽卡建议</a></h3>
+          <p>全版本最强角色盘点，T0/T1/T2 分级，告诉你该抽谁、该跳过谁，石头花在刀刃上。</p>
+          <div class="article-footer">
+            <span class="read-time">&#x23F1; 约 10 分钟</span>
+            <a href="guides/honkai-starrail-guide.html" class="read-more">阅读全文 →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 文章间广告 (AdSense 原生广告效果最佳) -->
+      <div class="ad-unit ad-inline" aria-label="广告">
+        <!-- <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins> -->
+        <div class="ad-placeholder">文章间广告位 — In-Article Ad</div>
+      </div>
+
+      <article class="article-card">
+        <a href="guides/zelda-totk-guide.html" class="article-thumb-link">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#134e4a,#065f46)">
+            <span class="thumb-icon">&#x1F6E1;&#xFE0F;</span>
+          </div>
+        </a>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="tag tag-console">主机游戏</span>
+            <time datetime="2026-06-02">2026-06-02</time>
+          </div>
+          <h3><a href="guides/zelda-totk-guide.html">塞尔达传说：王国之泪 全神庙位置 + 攻略合集</a></h3>
+          <p>152 座神庙逐一图文攻略，附带地图坐标和通关视频链接，一篇全收录。</p>
+          <div class="article-footer">
+            <span class="read-time">&#x23F1; 约 20 分钟</span>
+            <a href="guides/zelda-totk-guide.html" class="read-more">阅读全文 →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <a href="guides/genshin-guide.html" class="article-thumb-link">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">
+            <span class="thumb-icon">&#x1F31F;</span>
+          </div>
+        </a>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="tag tag-mobile">手游攻略</span>
+            <time datetime="2026-06-01">2026-06-01</time>
+          </div>
+          <h3><a href="guides/genshin-guide.html">原神 5.x 纳塔新地图探索攻略 — 全宝箱 + 成就解锁</a></h3>
+          <p>新地区全地图标注，宝箱、神像、成就一网打尽，附带高效路线推荐。</p>
+          <div class="article-footer">
+            <span class="read-time">&#x23F1; 约 12 分钟</span>
+            <a href="guides/genshin-guide.html" class="read-more">阅读全文 →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <a href="guides/minecraft-guide.html" class="article-thumb-link">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#7c3f00,#5c4033)">
+            <span class="thumb-icon">&#x26CF;&#xFE0F;</span>
+          </div>
+        </a>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="tag tag-pc">PC游戏</span>
+            <time datetime="2026-05-31">2026-05-31</time>
+          </div>
+          <h3><a href="guides/minecraft-guide.html">Minecraft 1.21 新手生存完全指南 — 从零到末影龙</a></h3>
+          <p>从第一天夜晚如何生存，到建立自动农场，再到挑战末影龙，全流程保姆级攻略。</p>
+          <div class="article-footer">
+            <span class="read-time">&#x23F1; 约 18 分钟</span>
+            <a href="guides/minecraft-guide.html" class="read-more">阅读全文 →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="page-btn active">1</a>
+      <a href="#" class="page-btn">2</a>
+      <a href="#" class="page-btn">3</a>
+      <span class="page-ellipsis">…</span>
+      <a href="#" class="page-btn">12</a>
+      <a href="#" class="page-btn page-next">下一页 →</a>
+    </div>
+  </main>
+
+  <!-- 侧边栏 -->
+  <aside class="sidebar">
+    <!-- 侧边栏广告 300x250 -->
+    <div class="ad-unit ad-sidebar" aria-label="广告">
+      <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins> -->
+      <div class="ad-placeholder ad-placeholder-square">广告位<br/>300×250</div>
+    </div>
+
+    <!-- 热门攻略 -->
+    <div class="widget">
+      <h3 class="widget-title">&#x1F525; 热门攻略</h3>
+      <ul class="hot-list">
+        <li><a href="guides/elden-ring-guide.html"><span class="rank rank-1">1</span> 艾尔登法环通关攻略</a></li>
+        <li><a href="guides/honkai-starrail-guide.html"><span class="rank rank-2">2</span> 星穹铁道角色梯队</a></li>
+        <li><a href="guides/genshin-guide.html"><span class="rank rank-3">3</span> 原神纳塔地图攻略</a></li>
+        <li><a href="guides/zelda-totk-guide.html"><span class="rank">4</span> 塞尔达王国之泪神庙</a></li>
+        <li><a href="guides/minecraft-guide.html"><span class="rank">5</span> Minecraft 新手完全指南</a></li>
+      </ul>
+    </div>
+
+    <!-- 标签云 -->
+    <div class="widget">
+      <h3 class="widget-title">&#x1F3F7;&#xFE0F; 热门标签</h3>
+      <div class="tag-cloud">
+        <a href="#" class="tag-link">通关攻略</a>
+        <a href="#" class="tag-link">手游</a>
+        <a href="#" class="tag-link">RPG</a>
+        <a href="#" class="tag-link">Boss打法</a>
+        <a href="#" class="tag-link">隐藏任务</a>
+        <a href="#" class="tag-link">原神</a>
+        <a href="#" class="tag-link">装备推荐</a>
+        <a href="#" class="tag-link">新手教程</a>
+        <a href="#" class="tag-link">抽卡</a>
+        <a href="#" class="tag-link">Minecraft</a>
+      </div>
+    </div>
+
+    <!-- 第二个侧边栏广告 (粘性) -->
+    <div class="ad-unit ad-sidebar sticky-ad" aria-label="广告">
+      <div class="ad-placeholder ad-placeholder-square">广告位<br/>300×600</div>
+    </div>
+  </aside>
+</div>
+
+<!-- ===================== FEATURES ===================== -->
+<section class="features section">
+  <div class="container">
+    <h2 class="section-title">为什么选择 GameGuide</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">&#x1F4DD;</span>
+        <h3>原创图文攻略</h3>
+        <p>每篇攻略均经过实际游戏验证，配有截图说明，步骤清晰不走弯路。</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#x1F504;</span>
+        <h3>持续跟进更新</h3>
+        <p>游戏版本更新后第一时间修订攻略，确保内容始终有效可用。</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#x1F50D;</span>
+        <h3>SEO 优化收录</h3>
+        <p>攻略覆盖长尾关键词，搜索"XX游戏怎么打"就能找到我们。</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#x1F4F1;</span>
+        <h3>手机完美适配</h3>
+        <p>响应式设计，无论手机还是电脑，阅读体验同样流畅。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER AD ===================== -->
+<div class="container">
+  <div class="ad-unit ad-banner" aria-label="广告">
+    <div class="ad-placeholder">底部广告位 — 728×90 横幅</div>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">🎮 GameGuide</a>
+      <p>专业游戏攻略，助你征服每一款游戏。</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>攻略分类</h4>
+        <ul>
+          <li><a href="guides/mobile.html">手游攻略</a></li>
+          <li><a href="guides/pc.html">PC游戏</a></li>
+          <li><a href="guides/console.html">主机游戏</a></li>
+          <li><a href="guides/rpg.html">角色扮演</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="privacy.html">隐私政策</a></li>
+          <li><a href="disclaimer.html">免责声明</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="#" rel="nofollow">合作站点 1</a></li>
+          <li><a href="#" rel="nofollow">合作站点 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 GameGuide. 保留所有权利。本站内容仅供参考，游戏版权归原开发商所有。</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

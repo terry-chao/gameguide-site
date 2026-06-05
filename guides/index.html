@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GameGuide 所有游戏攻略汇总 — 手游、PC、主机三大平台，通关攻略、角色培养、隐藏任务、装备推荐一站搞定。" />
+  <meta name="keywords" content="游戏攻略大全,手游攻略,PC游戏攻略,主机游戏攻略" />
+  <title>所有攻略 | GameGuide 游戏攻略站</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><span class="logo-icon">🎮</span><span class="logo-text">GameGuide</span></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li class="has-dropdown"><a href="index.html" class="active">攻略分类</a>
+          <ul class="dropdown">
+            <li><a href="mobile.html">手游攻略</a></li>
+            <li><a href="pc.html">PC游戏</a></li>
+            <li><a href="console.html">主机游戏</a></li>
+            <li><a href="rpg.html">角色扮演</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html">关于</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="search" placeholder="搜索攻略..." id="searchInput" aria-label="搜索" />
+        <button type="button" aria-label="搜索">🔍</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding:48px 20px 64px">
+  <h1 style="font-size:2rem;margin-bottom:8px">所有游戏攻略</h1>
+  <p style="color:var(--text-muted);margin-bottom:40px">共 5 篇攻略，持续更新中</p>
+
+  <!-- 分类筛选 -->
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px">
+    <button class="btn btn-primary" style="padding:8px 18px;font-size:.85rem" onclick="filterGuides('all')">全部</button>
+    <button class="btn btn-outline" style="padding:8px 18px;font-size:.85rem" onclick="filterGuides('mobile')">📱 手游</button>
+    <button class="btn btn-outline" style="padding:8px 18px;font-size:.85rem" onclick="filterGuides('pc')">💻 PC游戏</button>
+    <button class="btn btn-outline" style="padding:8px 18px;font-size:.85rem" onclick="filterGuides('console')">🕹️ 主机游戏</button>
+  </div>
+
+  <div class="ad-unit ad-banner" style="margin-bottom:32px"><div class="ad-placeholder">列表顶部广告 — 728×90</div></div>
+
+  <div class="article-list" id="guideList">
+
+    <article class="article-card" data-category="pc">
+      <a href="elden-ring-guide.html" class="article-thumb-link">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e)"><span class="thumb-icon">🗡️</span></div>
+      </a>
+      <div class="article-body">
+        <div class="article-meta"><span class="tag tag-pc">PC游戏</span><span class="tag" style="background:#e63946">高难度</span><time datetime="2026-06-04">2026-06-04</time></div>
+        <h3><a href="elden-ring-guide.html">艾尔登法环 完整通关攻略 — 全Boss打法 + 隐藏结局解锁</a></h3>
+        <p>详细讲解主线路线、各大Boss弱点和最优战灰搭配，新手也能轻松通关的完整指南。覆盖全6种结局解锁条件。</p>
+        <div class="article-footer"><span class="read-time">⏱ 约 15 分钟</span><a href="elden-ring-guide.html" class="read-more">阅读全文 →</a></div>
+      </div>
+    </article>
+
+    <article class="article-card" data-category="mobile">
+      <a href="honkai-starrail-guide.html" class="article-thumb-link">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#0f3460,#533483)"><span class="thumb-icon">✨</span></div>
+      </a>
+      <div class="article-body">
+        <div class="article-meta"><span class="tag tag-mobile">手游攻略</span><span class="tag" style="background:#f4a261">抽卡指南</span><time datetime="2026-06-03">2026-06-03</time></div>
+        <h3><a href="honkai-starrail-guide.html">崩坏：星穹铁道 4.x 最强角色梯队排名 + 抽卡建议</a></h3>
+        <p>T0/T1/T2 分级详解，Castorice、Tribbie、Sunday 等核心角色全面分析，以及推荐队伍搭配方案。</p>
+        <div class="article-footer"><span class="read-time">⏱ 约 10 分钟</span><a href="honkai-starrail-guide.html" class="read-more">阅读全文 →</a></div>
+      </div>
+    </article>
+
+    <article class="article-card" data-category="console">
+      <a href="zelda-totk-guide.html" class="article-thumb-link">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#134e4a,#065f46)"><span class="thumb-icon">🛡️</span></div>
+      </a>
+      <div class="article-body">
+        <div class="article-meta"><span class="tag tag-console">主机游戏</span><span class="tag" style="background:#2a9d8f">探索收集</span><time datetime="2026-06-02">2026-06-02</time></div>
+        <h3><a href="zelda-totk-guide.html">塞尔达传说：王国之泪 全 152 座神庙位置 + 攻略合集</a></h3>
+        <p>地面、天空岛、地底深处三层地图神庙逐一图文攻略，附坐标标注、解谜步骤和全收集奖励说明。</p>
+        <div class="article-footer"><span class="read-time">⏱ 约 20 分钟</span><a href="zelda-totk-guide.html" class="read-more">阅读全文 →</a></div>
+      </div>
+    </article>
+
+    <article class="article-card" data-category="mobile">
+      <a href="genshin-guide.html" class="article-thumb-link">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)"><span class="thumb-icon">🌊</span></div>
+      </a>
+      <div class="article-body">
+        <div class="article-meta"><span class="tag tag-mobile">手游攻略</span><span class="tag" style="background:#2a9d8f">探索指南</span><time datetime="2026-06-01">2026-06-01</time></div>
+        <h3><a href="genshin-guide.html">原神 5.x 纳塔地图探索攻略 — 全宝箱 + 成就解锁</a></h3>
+        <p>酋邦市集、燃焰之巅、古龙遗迹全区宝箱路线，隐藏成就解锁方法，精英素材刷取效率最大化。</p>
+        <div class="article-footer"><span class="read-time">⏱ 约 12 分钟</span><a href="genshin-guide.html" class="read-more">阅读全文 →</a></div>
+      </div>
+    </article>
+
+    <article class="article-card" data-category="pc">
+      <a href="minecraft-guide.html" class="article-thumb-link">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#7c3f00,#5c4033)"><span class="thumb-icon">⛏️</span></div>
+      </a>
+      <div class="article-body">
+        <div class="article-meta"><span class="tag tag-pc">PC游戏</span><span class="tag" style="background:#22c55e">新手友好</span><time datetime="2026-05-31">2026-05-31</time></div>
+        <h3><a href="minecraft-guide.html">Minecraft 1.21 新手生存完全指南 — 从零到末影龙</a></h3>
+        <p>从第一天夜晚如何生存，到铁器时代装备升级、进入下界，再到挑战末影龙，全流程保姆级攻略。</p>
+        <div class="article-footer"><span class="read-time">⏱ 约 18 分钟</span><a href="minecraft-guide.html" class="read-more">阅读全文 →</a></div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="ad-unit ad-banner" style="margin-top:32px"><div class="ad-placeholder">列表底部广告 — 728×90</div></div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand"><a href="../index.html" class="logo">🎮 GameGuide</a><p>专业游戏攻略，助你征服每一款游戏。</p></div>
+    <div class="footer-links">
+      <div class="footer-col"><h4>攻略分类</h4><ul><li><a href="mobile.html">手游攻略</a></li><li><a href="pc.html">PC游戏</a></li><li><a href="console.html">主机游戏</a></li></ul></div>
+      <div class="footer-col"><h4>关于本站</h4><ul><li><a href="../about.html">关于我们</a></li><li><a href="../privacy.html">隐私政策</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container"><p>© 2026 GameGuide. 保留所有权利。</p></div></div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+function filterGuides(cat) {
+  const cards = document.querySelectorAll('#guideList .article-card');
+  cards.forEach(function(c) {
+    if (cat === 'all' || c.dataset.category === cat) {
+      c.style.display = 'flex';
+    } else {
+      c.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
